@@ -1,0 +1,80 @@
+/* form style */ 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1.25rem;
+}
+
+/* textbox styles*/
+
+form input {
+    background-color: var(--blue);
+    border-radius: .5rem;
+    min-height: 1.5rem;
+    width: 10rem;
+    align-self: center;
+    text-align: center;
+    border-style: 1rem solid;
+    border-color: var(--blue);
+
+}
+
+::placeholder {
+    color: #000;
+    font-weight: bold;
+}
+
+form input:hover {
+    background-color: var(--blue);
+}
+
+form input:focus {
+    background-color: var(--white);
+}
+
+/* terms and conditions style */
+
+.accept-terms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+}
+
+/* checkbox size */
+
+input[type="checkbox"] {
+    width: 1rem;
+} 
+
+/* terms and conditions text size*/
+
+ p {
+    font-size: 1rem;
+
+} */
+
+/* forgot password link style */
+
+a:link {
+
+    color: #000;
+}
+a:visited {
+    color: #000;
+}
+
+a:hover {
+    color: var(--red);
+}
+
+
+/* submit button*/
+
+input[type="submit"]:hover {
+    background-color: var(--blue);
+    color: #000;
+}
+
+
