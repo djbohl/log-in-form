@@ -40,6 +40,7 @@ form input:focus {
     flex-direction: row;
     align-items: center;
     font-size: 1rem;
+    gap: .5em;
 }
 
 /* checkbox size */
