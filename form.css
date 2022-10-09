@@ -6,6 +6,10 @@ form {
     font-size: 1.25rem;
 }
 
+/* hide register form */
+.register-form {
+    visibility: hidden;
+}
 /* textbox styles*/
 
 form input {
