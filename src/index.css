@@ -1,0 +1,219 @@
+:root {
+  --blue: #90E9FF;
+  --light-green: #9ce3a2;
+  --pink: #f8bbef;
+  --white: #FFF;
+  --transparent-white: rgba(255, 255, 255, 0.3);
+  --dark-grey: rgb(81, 81, 81);
+  --light-grey: rgb(184, 184, 184);
+  --red: #bf0000;
+}
+
+* {
+  font-size: 100%;
+  margin: 0;
+	padding: 0;
+	border: 0;
+}
+html, body {
+    min-height: 100vh;
+}
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  color: #000;
+  background: linear-gradient(90deg, rgba(174,238,204,1) 0%, rgba(3,0,111,1) 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+  /* container style */
+  background-color: var(--transparent-white);
+  width: 50vw;
+  height: 90vh;
+  border: 2px solid var(--transparent-white);
+  background-blend-mode: multiply, normal;
+ border-radius: 20px;
+  /* center container */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  /* flexbox and align items */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+/* submit button*/
+input[type="submit"] {
+ text-transform: uppercase;
+ color: #000;
+ background-color: var(--light-grey);
+}
+input[type="submit"]:hover {
+ background-color: var(--dark-green);
+ color: #000;
+ 
+}
+
+form {
+ display: flex;
+ flex-direction: column;
+ gap: .5rem;
+}
+
+/* log in and Register buttons*/
+
+.bttns {
+ display: flex;
+ flex-direction: row;
+ gap: .5rem;
+}
+
+button {
+ width: 50%;
+ background-color: var(--blue);
+ border-radius: 5rem;
+ min-height: 1.5rem;
+ align-self: center;
+ text-align: center;
+ border-style: 1rem solid;
+ border-color: var(--blue);
+ transition: .4s;
+}
+
+button.active {
+ background-color: var(--light-grey);
+}
+
+button.active:hover {
+ background-color: var(--light-grey);
+}
+
+button:hover {
+ background-color: var(--light-green);
+}
+/* flex-container for username input */
+
+.container .username {
+ width: 100%;
+ background-color: var(--blue);
+ border-radius: .5rem;
+ min-height: 1.5rem;
+ align-self: center;
+ text-align: center;
+ border-style: 1rem solid;
+ border-color: var(--blue);
+ transition: .4s;
+}
+
+
+.username:focus {
+ background-color: var(--white);
+}
+
+/* flex-container for password and icon */
+
+.password-and-icon {
+ display: flex;
+ flex-direction: row-reverse;
+ align-items: center;
+
+}
+
+/*flex-container for password inpupt */
+.password {
+ width: 100%;
+ background-color: var(--blue);
+ border-radius: .5rem;
+ min-height: 1.5rem;
+ align-self: center;
+ text-align: center;
+ border-style: 1rem solid;
+ border-color: var(--blue);
+ transition: .4s;
+}
+
+.password:focus {
+ background-color: var(--white);
+}
+
+/* showhide button style */
+
+i {
+ position: absolute;
+ padding: .2em;
+
+}
+
+
+
+/* style and layout for password validation */
+
+.container p {
+ margin: 0.5rem ;
+ transition: .3s ;
+}
+
+.container p span {
+ font-size: 1rem;
+ color: var(--dark-grey);
+ margin-left: 1rem;
+}
+.container p .icon {
+ position: absolute;
+ text-align: center;
+ width: 4rem;
+ height: 4rem;
+ line-height: 2.5rem;
+ border-radius: 50%;
+ color: var(--dark-grey);
+ font-size: large;
+}
+
+.fa-times {
+ opacity: 0;
+}
+
+.fa-check {
+ opacity: 0.5;
+}
+
+
+
+/* submit button*/
+
+input[type="submit"] {
+ background-color: var(--blue);
+ color: #000;
+ border-radius: 5rem;
+ width: 50%;
+ height: 1.5rem;
+ align-self: center;
+}
+
+
+input[type="submit"]:hover {
+ background-color: var(--light-green);
+ color: #000;
+}
+
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 500px) {
+  .container {
+    height: 60vh;
+    width: 75vw;
+  }
+}

@@ -1,1 +1,0 @@
-//create login and register button function to hide and show component
