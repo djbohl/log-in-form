@@ -12,8 +12,8 @@
 * {
   font-size: 100%;
   margin: 0;
-	padding: 0;
-	border: 0;
+    padding: 0;
+    border: 0;
 }
 html, body {
     min-height: 100vh;
@@ -23,8 +23,17 @@ body {
   font-size: 1rem;
   color: #000;
   background: linear-gradient(90deg, rgba(174,238,204,1) 0%, rgba(3,0,111,1) 100%);
-	background-repeat: no-repeat;
-	background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.renderbttn {
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-top: 22vh;
+  width: 5rem;
+  
 }
 
 .container {
@@ -101,6 +110,24 @@ button.active:hover {
 button:hover {
  background-color: var(--light-green);
 }
+
+/* flex-container for email input */
+.container .email {
+  width: 100%;
+  background-color: var(--blue);
+  border-radius: .5rem;
+  min-height: 1.5rem;
+  align-self: center;
+  text-align: center;
+  border-style: 1rem solid;
+  border-color: var(--blue);
+  transition: .4s;
+ }
+ 
+ 
+ .email:focus {
+  background-color: var(--white);
+ }
 /* flex-container for username input */
 
 .container .username {

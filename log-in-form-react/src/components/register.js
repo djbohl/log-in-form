@@ -9,8 +9,7 @@ form validation
 func to remove and add active state to buttons
 func to toggle icons and opacity when form validation is met
 */
-
-    export default function App() {
+    export default function Register() {
     const [show, setShow] = useState(false);
 
 
@@ -22,23 +21,18 @@ func to toggle icons and opacity when form validation is met
       setShow(!show);
     };
 
-    const logIn = () => {
-      //do something
-    }
-
-    const register = () => {
-      //do something
-    }
-
   return (
-    <div className="app">
+    <React.Fragment>
+        <section id='register-form'>
+    <div className="Component">
         <div className="container">
           
             <form onSubmit={handleSubmit}>
-              <div className='bttns'>
-                <button className='login active' onClick={logIn}>Login</button>
-                <button className='register' onClick={register}>Register</button>
-            </div>
+            <input
+                type = "email"
+                className = "email"
+                placeholder = "Enter Email"
+              />
               <input
                 type = "username"
                 className = "username"
@@ -95,5 +89,6 @@ func to toggle icons and opacity when form validation is met
             </form>
         </div>
   </div>
-  )
-  }
+  </section>
+  </React.Fragment>
+  )}
